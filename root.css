@@ -1,0 +1,106 @@
+body{
+    background: #252525;
+}
+
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-text: #333;
+    --font-size-large: 24px;
+    --font-size-medium: 16px;
+    --font-size-small: 14px;
+    --padding-large: 20px;
+    --padding-medium: 15px;
+    --padding-small: 10px;
+    --margin-large: 20px;
+    --margin-medium: 10px;
+    --margin-small: 5px;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .icon-left {
+    padding-left: var(--padding-medium);
+  }
+  
+  .default {
+    font-size: var(--font-size-medium);
+    padding: var(--padding-small) var(--padding-medium);
+    margin: var(--margin-small);
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border-radius: 5px;
+    
+  }
+  
+  .large {
+    font-size: var(--font-size-large);
+    padding: var(--padding-medium) var(--padding-large);
+    margin: var(--margin-medium) var(--margin-large);
+  }
+  
+  .primary {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  
+  .primary:hover {
+    background-color: #0069d9;
+  }
+  
+  .primary:active {
+    background-color: #005cbf;
+  }
+  
+  .default:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
+  }
+  
+  .default:active {
+    background-color: #c6c6c6;
+  }
+  
+  .default:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .default:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .loading:after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.2em;
+    border-radius: 50%;
+    border: 0.2em solid currentColor;
+    border-right-color: transparent;
+    animation: spin 0.8s linear infinite;
+    margin-left: 0.4em;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
